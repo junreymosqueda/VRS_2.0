@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7C9ACAC-62D8-4D01-9E44-AC377E7EF48F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VRS_2._0</RootNamespace>
+    <AssemblyName>VRS_2.0</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\Downloads\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Archive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Archive.Designer.cs">
+      <DependentUpon>Archive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forgotpass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgotpass.Designer.cs">
+      <DependentUpon>forgotpass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recordform.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Recordform.Designer.cs">
+      <DependentUpon>Recordform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ressetpass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ressetpass.Designer.cs">
+      <DependentUpon>ressetpass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffInterface.Designer.cs">
+      <DependentUpon>StaffInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staffrules.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Staffrules.Designer.cs">
+      <DependentUpon>Staffrules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_home.Designer.cs">
+      <DependentUpon>UC_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_profile.Designer.cs">
+      <DependentUpon>UC_profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_profilepage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_profilepage.Designer.cs">
+      <DependentUpon>UC_profilepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_record.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_record.Designer.cs">
+      <DependentUpon>UC_record.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_rules.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_rules.Designer.cs">
+      <DependentUpon>UC_rules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_staffprofile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_staffprofile.Designer.cs">
+      <DependentUpon>UC_staffprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Staffrecord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Staffrecord.Designer.cs">
+      <DependentUpon>UC_Staffrecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_staffrecordform.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_staffrecordform.Designer.cs">
+      <DependentUpon>UC_staffrecordform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_userlist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_userlist.Designer.cs">
+      <DependentUpon>UC_userlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Archive_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Archive_user.Designer.cs">
+      <DependentUpon>Archive_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VRS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VRS.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Archive.resx">
+      <DependentUpon>Archive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgotpass.resx">
+      <DependentUpon>forgotpass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Recordform.resx">
+      <DependentUpon>Recordform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ressetpass.resx">
+      <DependentUpon>ressetpass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffInterface.resx">
+      <DependentUpon>StaffInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staffrules.resx">
+      <DependentUpon>Staffrules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_home.resx">
+      <DependentUpon>UC_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_profile.resx">
+      <DependentUpon>UC_profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_profilepage.resx">
+      <DependentUpon>UC_profilepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_record.resx">
+      <DependentUpon>UC_record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_rules.resx">
+      <DependentUpon>UC_rules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_staffprofile.resx">
+      <DependentUpon>UC_staffprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Staffrecord.resx">
+      <DependentUpon>UC_Staffrecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_staffrecordform.resx">
+      <DependentUpon>UC_staffrecordform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_userlist.resx">
+      <DependentUpon>UC_userlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Archive_user.resx">
+      <DependentUpon>Archive_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="VRS.xsc">
+      <DependentUpon>VRS.xsd</DependentUpon>
+    </None>
+    <None Include="VRS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VRS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VRS.xss">
+      <DependentUpon>VRS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vrs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vrs-removebg-preview.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
